@@ -49,7 +49,7 @@ Only the Jumpbox machine can accept connections from the Internet. Access to thi
 - Personal IP Address
 
 Machines within the network can only be accessed by SSH.
-- The only machine that is able to connect to the ELK-VM (10.1.0.4) is via JumpBox from Private IP (10.0.0.4)
+- The only machine that is able to connect to the ELK-VM (10.1.0.4) is JumpBox using Private IP (10.0.0.4)
 
 A summary of the access policies in place can be found in the table below.
 
