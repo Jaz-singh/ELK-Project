@@ -72,7 +72,7 @@ The playbook implements the following tasks:
 - Create new Inbound Security Rules to allow Ports: 5601, 9200, 5044 "The Inbound Security Rules should allow access from your Personal Network"
 - Open a new browser and type in the (http://[your.VM.IP]:5601/app/kibana) to access the Kibana Portal Site
 
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
+The following screenshot displays the result of running `docker container list -a` after successfully configuring the ELK instance.
 
 ![docker ps](https://github.com/Jaz-singh/ELK-Project/blob/main/Diagrams/ELK_Install.png)
 
