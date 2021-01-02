@@ -23,7 +23,7 @@ This document contains the following details:
 - Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 - Load balancers protect: Protect applications from emerging threats
 
-The advantage of a JumpBox is the orgination point for launching Administrative Tasks. This ultimately sets the JumpBox as a SAW (Secure Admin Workstation). All Administrators when conducting any Administrative Task will be required to connect to the JumpBox before perfoming any task/assignment.
+The advantage of a JumpBox is the orgination point for launching Administrative Tasks. This ultimately sets the JumpBox. All Administrators when conducting any Administrative Task will be required to connect to the JumpBox before perfoming any task/assignment.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
 
@@ -55,7 +55,7 @@ A summary of the access policies in place can be found in the table below.
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
 | Jump Box | No                  | Personal IP          |
-| ELK-VM   | No                  | 10.0.0.4 		    |
+| ELK-VM   | No                  | 10.0.0.4 		        |
 | Web 1    | No                  | 10.0.0.4             |
 | Web 2    | No                  | 10.0.0.4             |
 | Web 3    | No                  | 10.0.0.4             |
@@ -67,7 +67,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 - Create a New VM ("ELK-VM") Keep note of the Private IP (10.1.0.4) and the Public IP; you will need the Private IP to SSH into the VM and the Public IP to connect to the Kibana Portal (HTTP Site) to view all Metrics/Syslogs
-- Download and configure the "elk-docker" container " in the hosts. You will need to add a new security group [elkservers] and the Private IP (10.1.0.4) to the group. Then you need to create a new ansible-playbook (elk-install) that will download, install, configures the "ELK-VM" to map the following ports [5601,9200,5044], and starts the container
+- Download and configure the "elk-docker" container " in the hosts. You will need to add a new security group [ELKvNet] and the Private IP (10.1.0.4) to the group. Then you need to create a new ansible-playbook (elk-install) that will download, install, configures the "ELK-VM" to map the following ports [5601,9200,5044], and starts the container
 - Launch and expose the container "After installing and starting the new container. You can verify that the container is up and running by SSHing into the container from your JumpBox
 - Create new Inbound Security Rules to allow Ports: 5601, 9200, 5044 "The Inbound Security Rules should allow access from your Personal Network"
 - Open a new browser and type in the (http://[your.VM.IP]:5601/app/kibana) to access the Kibana Portal Site
