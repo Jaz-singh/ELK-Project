@@ -97,8 +97,8 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to ELK-VM to check that the installation worked as expected
 
 Answer the following questions to fill in the blanks:
-- Which file is the playbook? Where do you copy it?
-	-The playbook is called filebeat-install.yml. You copy the file to the "/etc/ansible/hosts/" directory
+1. Which file is the playbook? Where do you copy it?
+2. The playbook is called filebeat-install.yml. You copy the file to the "/etc/ansible/hosts/" directory
 - Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
   The file you need to update is the filebeat.yml file, a configuration file that will be dropped into the Elk-VM during the ansible-playbook. When you update the host.cfg file in the ansible directory, you will need to create a new group called [elkservers] and add the Private IP of the Elk-Server to the group. When configuring the filebeat.yml file, you need to designate the Private IP of the Elk-Server in two lines of the .yml file. Lines 1106 and 1806 are required to be updated with the Private IP
 - Which URL do you navigate to in order to check that the ELK server is running?
