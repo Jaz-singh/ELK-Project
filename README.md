@@ -20,25 +20,20 @@ This document contains the following details:
 
 ### Description of the Topology
 
-The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
+- The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
-
-Load balancers protect: Protect applications from emerging threats
-						Authenticate User Access
-						Protect against DDoS attack
-						Simplify PCI compliance
+- Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
+- Load balancers protect: Protect applications from emerging threats
 
 The advantage of a JumpBox is the orgination point for launching Administrative Tasks. This ultimately sets the JumpBox as a SAW (Secure Admin Workstation). All Administrators when conducting any Administrative Task will be required to connect to the JumpBox (SAW) before perfoming any task/assignment.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
 
-Filebeat watches for log files/locations and collects log events.
+- Filebeat watches for log files/locations and collects log events.
 
-Metricbeat records metrics from the operating system and from services running on the server
+- Metricbeat records metrics from the operating system and from services running on the server
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
@@ -63,8 +58,10 @@ A summary of the access policies in place can be found in the table below.
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
 | Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| ELK      |                     |                      |
+| Web 1    |                     |                      |
+| Web 2    |                     |                      |
+| Web 3    |                     |                      |
 
 ### Elk Configuration
 
