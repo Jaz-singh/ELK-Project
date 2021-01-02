@@ -1,4 +1,4 @@
-# This is a YML script to install elk on docker conrtainer
+# This is a YAML script to install elk on docker container
 
 ---
 - name: Config Web VM with Docker
