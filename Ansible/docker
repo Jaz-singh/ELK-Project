@@ -1,4 +1,4 @@
-# This is the YML script to configure docker services on Web VM
+# This is the YAML script to configure DVWA docker services on Web VM
 
 ---
 - name: Config Web VM with Docker
